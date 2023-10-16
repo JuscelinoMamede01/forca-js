@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Jogo da forca</title>
+  </head>
+
+  <body>
+    <h1 class="display-2">Jogo da Forca</h1>
+    <p class="display-6 text-center" id="tentativas">Tentativas restantes: 6</p>
+    <section class="container">
+      <div class="row col-6 border1 mx-auto">
+        <p class="lead text-center fw-semibold" id="dica"></p>
+        <p class="lead display-4 text-center" id="palavra"></p>
+      </div>
+    </section>
+
+    <main id="main">
+      <div class="container keyboard"></div>
+    </main>
+    <div class="row gap-3 mt-2">
+      <button class="btn btn-primary ms-3" id="iniciarJogo">
+        Iniciar Jogo
+      </button>
+      <button class="btn btn-primary ms-3" id="novaPalavra">
+        Nova Palavra
+      </button>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
