@@ -31,6 +31,7 @@ const dicaElement = document.getElementById("dica");
 const palavraElement = document.getElementById("palavra");
 let iniciarJogoButton = document.getElementById("iniciarJogo");
 const novaPalavraButton = document.getElementById("novaPalavra");
+novaPalavraButton.style.display = "none";
 let tentativas = 6;
 let palavraSorteada = null;
 
@@ -45,6 +46,7 @@ function sortearPalavra() {
 function iniciarJogo() {
   sortearPalavra();
   iniciarJogoButton.style.display = "none";
+  novaPalavraButton.style.display = "block";
 }
 
 function novaPalavra(id) {
